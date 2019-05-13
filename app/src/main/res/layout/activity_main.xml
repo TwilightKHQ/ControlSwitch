@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        app:title="@string/app_name"
+        app:theme="@style/OverFlowMenuTheme"
+        app:popupTheme="@style/AppTheme"
+        android:background="@color/blue"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/dp_16">
+
+                <TextView
+                    android:id="@+id/label_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/shape_circle_blue"
+                    android:gravity="center"
+                    android:text="连接"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <Button
+                    android:id="@+id/button_connect"
+                    style="?borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_56"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_toRightOf="@+id/label_connect"
+                    android:background="@color/white"
+                    android:textColor="@color/state_press_black"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onClickConnect"
+                    android:text="连接配置"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_1"
+                    android:layout_below="@id/label_connect"
+                    android:layout_alignLeft="@id/button_connect"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/gray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/dp_16">
+
+                <TextView
+                    android:id="@+id/label_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/shape_circle_blue"
+                    android:gravity="center"
+                    android:text="开关"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <Button
+                    android:id="@+id/button_switch"
+                    style="?borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_56"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_toRightOf="@+id/label_switch"
+                    android:background="@color/white"
+                    android:textColor="@color/state_press_black"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onClickSwitch"
+                    android:text="控制开关"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_1"
+                    android:layout_below="@id/label_switch"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_alignLeft="@id/button_switch"
+                    android:background="@color/gray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/dp_16">
+
+                <TextView
+                    android:id="@+id/label_security"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:background="@drawable/shape_circle_blue"
+                    android:gravity="center"
+                    android:text="安全"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <Button
+                    android:id="@+id/button_security"
+                    style="?borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_56"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_toRightOf="@+id/label_security"
+                    android:background="@color/white"
+                    android:textColor="@color/state_press_black"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onClickSecurity"
+                    android:text="安全设置"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:id="@+id/divider_tab_abl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_1"
+                    android:layout_below="@id/label_security"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_alignLeft="@id/button_security"
+                    android:background="@color/gray" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <!--</ScrollView>-->
+
+</LinearLayout>
