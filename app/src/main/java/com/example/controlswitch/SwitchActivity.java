@@ -83,7 +83,7 @@ public class SwitchActivity extends BaseActivity {
                 cursor.close();
 
                 spinner = addItemDialog.getSpinner();
-                //去两个List的差集
+                //取两个List的差集
                 List<String> portList = dataList.stream().filter(item -> !numberList.contains(item)).collect(toList());
                 Log.d(TAG, "portlist: " + portList);
                 adapter = new ArrayAdapter<String>(SwitchActivity.this, android.R.layout.simple_spinner_item, portList);
